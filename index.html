@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=1440px, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="images/logos/logo.png"/>
     <title>Агрофирма Shovel</title>
@@ -11,168 +11,170 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neucha&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/logos/logo.png" alt="Логотип" class="logo">
-            <h1 class="site-title">Агрофирма Shovel</h1>
-        </div>
-        <div class="header-nav">
-            <a href="#main-content">Главная</a>
-            <a href="#categories-content">Товары</a>
-            <a href="#about-content">О<i class="invisible">_</i>нас</a>
-            <a href="#contacts-content">Контакты</a>
-        </div>
-    </header>
-    <main>
-        <!-- greetengs block -->
-        <div class="greetengs" id="main-content">
-            <p class="greetengs">Спасибо, что выбираете <i class="greetengs">Агрофирму Shovel!</i></p>
-            <div class="greetengs-container"><img class="greetengs" src="images/miniature_vectorized.jpeg" alt="cart"/></div>
-        </div>
-
-        <!-- categories block -->
-        <div class="categories" id="categories-content">
-            <p class="categories">Популярные категории</p>
+    <div id="page-container">
+        <header>
+            <div class="logo-container">
+                <img src="images/logos/logo.png" alt="Логотип" class="logo">
+                <h1 class="site-title">Агрофирма Shovel</h1>
+            </div>
+            <div class="header-nav">
+                <a href="#main-content">Главная</a>
+                <a href="#categories-content">Товары</a>
+                <a href="#about-content">О<i class="invisible">_</i>нас</a>
+                <a href="#contacts-content">Контакты</a>
+            </div>
+        </header>
+        <main>
+            <!-- greetengs block -->
+            <div class="greetengs" id="main-content">
+                <p class="greetengs">Спасибо, что выбираете <i class="greetengs">Агрофирму Shovel!</i></p>
+                <div class="greetengs-container"><img class="greetengs" src="images/miniature_vectorized.jpeg" alt="cart"/></div>
+            </div>
+    
+            <!-- categories block -->
+            <div class="categories" id="categories-content">
+                <p class="categories">Популярные категории</p>
+                <div class="cards-container">
+    
+                    <!-- vegetables -->
+                    <div class="card" onclick="window.location.href='catalogue.html';">
+                        <div class="img-container" >
+                            <img class = "category-img" src="images/cards_categories/Vegetables_Cucumbers.jpg" alt="Фото сочнейших вкуснейших овощей">
+                        </div>
+                        <p class="category-label">Семена овощей</p>
+                        <p class="category-content">Морковь, Брюква, Свекла, Редис ...</p>
+                    </div>
+    
+                    <!-- berries -->
+                    <div class="card" onclick="window.location.href='catalogue.html';">
+                        <div class="img-container">
+                            <img class = "category-img" src="images/cards_categories/berriesjpg.jpg" alt="Ягод лукошко">
+                        </div>
+                        <p class="category-label">Семена ягод</p>
+                        <p class="category-content">Малина, Крыжовник, Ежевика, Жимолость ...</p>
+                    </div>
+    
+                    <!-- flowers -->
+                    <div class="card" onclick="window.location.href='catalogue.html';">
+                        <div class="img-container">
+                            <img class = "category-img" src="images/cards_categories/flowers.jpg" alt="От сердца и почек">
+                        </div>
+                        <p class="category-label">Семена цветов</p>
+                        <p class="category-content">Астра, Бальзамин, Бархатцы, Бегония ...</p>
+                    </div>
+                </div>
+                <div class="cards-container">
+    
+                    <!-- bahchevs -->
+                    <div class="card" onclick="window.location.href='catalogue.html';">
+                        <div class="img-container">
+                            <img class = "category-img" src="images/cards_categories/tykvy-arbuzy-dyni.jpg" alt="Они так-то тоже ягоды">
+                        </div>
+                        <p class="category-label">Семена бахчевых культур</p>
+                        <p class="category-content">Арбуз, Дыня, Кабачок, Патиссон ...</p>
+                    </div>
+    
+                    <!-- trees -->
+                    <div class="card" onclick="window.location.href='catalogue.html';">
+                        <div class="img-container">
+                            <img class = "category-img" src="images/cards_categories/trees.jpg" alt="Ландшафно-дизайнерский шедевр">
+                        </div>
+                        <p class="category-label">Семена кустарников и деревьев</p>
+                        <p class="category-content">Абрикос, Айва, Актинидия, Арония ...</p>
+                    </div>
+    
+                    <!-- agrochemistry -->
+                    <div class="card" onclick="window.location.href='catalogue.html';">
+                        <div class="img-container">
+                            <img class = "category-img" src="images/cards_categories/keep_away_from_children.jpg" alt="Общажный завтрак">
+                        </div>
+                        <p class="category-label">Удобрения, агрохимия</p>
+                        <p class="category-content">Биостимулятор, Гумат, Гуминовое ...</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- about block -->
+            <div class="killer-fitch-label" id="about-content">
+                <h4 class="killer-fitch-label">Чем <i class="greetengs">Агрофирма Shovel</i> лучше остальных</h4>
+            </div>
             <div class="cards-container">
-
-                <!-- vegetables -->
-                <div class="card" onclick="window.location.href='catalogue.html';">
-                    <div class="img-container" >
-                        <img class = "category-img" src="images/cards_categories/Vegetables_Cucumbers.jpg" alt="Фото сочнейших вкуснейших овощей">
+                <div class="uno-fitch">
+                    <div class="centered-img">
+                        <img class="fich-img" src="images/killer_fitches_jpgs/killerfitch_vectorized.jpg" alt="проросшее семячко">
                     </div>
-                    <p class="category-label">Семена овощей</p>
-                    <p class="category-content">Морковь, Брюква, Свекла, Редис ...</p>
-                </div>
-
-                <!-- berries -->
-                <div class="card" onclick="window.location.href='catalogue.html';">
-                    <div class="img-container">
-                        <img class = "category-img" src="images/cards_categories/berriesjpg.jpg" alt="Ягод лукошко">
+                    <div class="text-block">
+                        <p class="fich-label">Гарантия всхожести</p>
                     </div>
-                    <p class="category-label">Семена ягод</p>
-                    <p class="category-content">Малина, Крыжовник, Ежевика, Жимолость ...</p>
-                </div>
-
-                <!-- flowers -->
-                <div class="card" onclick="window.location.href='catalogue.html';">
-                    <div class="img-container">
-                        <img class = "category-img" src="images/cards_categories/flowers.jpg" alt="От сердца и почек">
+                    <div class="text-block">
+                        <p class="fich-content">Высокая гарантия всхожести семян с возможностью замены или возврата денег</p>
                     </div>
-                    <p class="category-label">Семена цветов</p>
-                    <p class="category-content">Астра, Бальзамин, Бархатцы, Бегония ...</p>
                 </div>
-            </div>
-            <div class="cards-container">
-
-                <!-- bahchevs -->
-                <div class="card" onclick="window.location.href='catalogue.html';">
-                    <div class="img-container">
-                        <img class = "category-img" src="images/cards_categories/tykvy-arbuzy-dyni.jpg" alt="Они так-то тоже ягоды">
+                <div class="uno-fitch">
+                    <div class="centered-img">
+                        <img class="fich-img" src="images/killer_fitches_jpgs/fermer.jpg" alt="фермер">
                     </div>
-                    <p class="category-label">Семена бахчевых культур</p>
-                    <p class="category-content">Арбуз, Дыня, Кабачок, Патиссон ...</p>
-                </div>
-
-                <!-- trees -->
-                <div class="card" onclick="window.location.href='catalogue.html';">
-                    <div class="img-container">
-                        <img class = "category-img" src="images/cards_categories/trees.jpg" alt="Ландшафно-дизайнерский шедевр">
+                    <div class="text-block">
+                        <p class="fich-label">Собственный питомник</p>
                     </div>
-                    <p class="category-label">Семена кустарников и деревьев</p>
-                    <p class="category-content">Абрикос, Айва, Актинидия, Арония ...</p>
-                </div>
-
-                <!-- agrochemistry -->
-                <div class="card" onclick="window.location.href='catalogue.html';">
-                    <div class="img-container">
-                        <img class = "category-img" src="images/cards_categories/keep_away_from_children.jpg" alt="Общажный завтрак">
+                    <div class="text-block">
+                        <p class="fich-content">В продаже только лучшая продукция</p>
                     </div>
-                    <p class="category-label">Удобрения, агрохимия</p>
-                    <p class="category-content">Биостимулятор, Гумат, Гуминовое ...</p>
+                </div>
+                <div class="uno-fitch">
+                    <div class="centered-img">
+                        <img class="fich-img" src="images/killer_fitches_jpgs/eco_vectorized.jpg" alt="эко лого">
+                    </div>
+                    <div class="text-block">
+                        <p class="fich-label">Экологичная упаковка</p>
+                    </div>
+                    <div class="text-block">
+                        <p class="fich-content">Хорошая агрофирма — экологически сознательная агрофирма</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- about block -->
-        <div class="killer-fitch-label" id="about-content">
-            <h4 class="killer-fitch-label">Чем <i class="greetengs">Агрофирма Shovel</i> лучше остальных</h4>
-        </div>
-        <div class="cards-container">
-            <div class="uno-fitch">
-                <div class="centered-img">
-                    <img class="fich-img" src="images/killer_fitches_jpgs/killerfitch_vectorized.jpg" alt="проросшее семячко">
-                </div>
-                <div class="text-block">
-                    <p class="fich-label">Гарантия всхожести</p>
-                </div>
-                <div class="text-block">
-                    <p class="fich-content">Высокая гарантия всхожести семян с возможностью замены или возврата денег</p>
+    
+            <!-- Yandex map -->
+            <div class="killer-fitch-label">
+                <h4 class="killer-fitch-label" id="contacts-content">Где нас <i class="greetengs">найти</i></h4>
+            </div>
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6cf729f20c733ccbf6bb22dd6a1f27b11a8795367cf084fa4541e45a97165837&amp;width=1040&amp;height=620&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+    
+            <!-- adds -->
+            <div class="adds-card">
+                <p class="adds-card">Получать уведомления о специальных предложениях и персональных скидках</p>
+                <div class="email-fill">
+                    <p class="email-fill">
+                        <input type="email" placeholder="Ваш Email" class="email-fill" id="email">
+                    </p>
+                    <div class="button">
+                        <svg class="button" width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M48 28L0 55.7128L0 0.287188L48 28Z" fill="#388F02"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
-            <div class="uno-fitch">
-                <div class="centered-img">
-                    <img class="fich-img" src="images/killer_fitches_jpgs/fermer.jpg" alt="фермер">
-                </div>
-                <div class="text-block">
-                    <p class="fich-label">Собственный питомник</p>
-                </div>
-                <div class="text-block">
-                    <p class="fich-content">В продаже только лучшая продукция</p>
-                </div>
-            </div>
-            <div class="uno-fitch">
-                <div class="centered-img">
-                    <img class="fich-img" src="images/killer_fitches_jpgs/eco_vectorized.jpg" alt="эко лого">
-                </div>
-                <div class="text-block">
-                    <p class="fich-label">Экологичная упаковка</p>
-                </div>
-                <div class="text-block">
-                    <p class="fich-content">Хорошая агрофирма — экологически сознательная агрофирма</p>
+        </main>
+        <footer>
+            <div class="social-media">
+                <p class="social-media">Следите за нами в социальных сетях</p>
+                <div class="logos">
+                    <img class = "logo" src="images/logos/vk_logo.png" alt="логотип Вконтакте"/>
+                <img class = "logo" src="images/logos/the_best_one.png" alt="логотип Одноклассников"/>
+                <img class = "logo" src="images/logos/tg_logo.png" alt="логотип Телеграм"/>
                 </div>
             </div>
-        </div>
-
-        <!-- Yandex map -->
-        <div class="killer-fitch-label">
-            <h4 class="killer-fitch-label" id="contacts-content">Где нас <i class="greetengs">найти</i></h4>
-        </div>
-        <div class="map-container">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6cf729f20c733ccbf6bb22dd6a1f27b11a8795367cf084fa4541e45a97165837&amp;width=1040&amp;height=620&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
-
-        <!-- adds -->
-        <div class="adds-card">
-            <p class="adds-card">Получать уведомления о специальных предложениях и персональных скидках</p>
-            <div class="email-fill">
-                <p class="email-fill">
-                    <input type="email" placeholder="Ваш Email" class="email-fill" id="email">
-                </p>
-                <div class="button">
-                    <svg class="button" width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M48 28L0 55.7128L0 0.287188L48 28Z" fill="#388F02"/>
-                    </svg>
-                </div>
+            <div class="contacts">
+                <p class="contacts">Почта: <i class="contacts">shovel@seeds.com</i></p>
+                <p class="contacts">Телефон: <i class="contacts">+7 (9xx) xxx-xx-xx</i></p>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="social-media">
-            <p class="social-media">Следите за нами в социальных сетях</p>
-            <div class="logos">
-                <img class = "logo" src="images/logos/vk_logo.png" alt="логотип Вконтакте"/>
-            <img class = "logo" src="images/logos/the_best_one.png" alt="логотип Одноклассников"/>
-            <img class = "logo" src="images/logos/tg_logo.png" alt="логотип Телеграм"/>
+            <div class="for-the-last-one-logo-finally">
+                <img class="logo" src="images/logos/logo.png" alt="логотип агрофирмы">
             </div>
-        </div>
-        <div class="contacts">
-            <p class="contacts">Почта: <i class="contacts">shovel@seeds.com</i></p>
-            <p class="contacts">Телефон: <i class="contacts">+7 (9xx) xxx-xx-xx</i></p>
-        </div>
-        <div class="for-the-last-one-logo-finally">
-            <img class="logo" src="images/logos/logo.png" alt="логотип агрофирмы">
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
         new SmoothScroll('a[href*="#"]');

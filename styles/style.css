@@ -17,6 +17,17 @@
     font-style: normal;
 }
 
+#page-container {
+    width: 100%;
+}
+
+@media (max-width: 967px) {
+    #page-container {
+        transform: scale(0.33);
+        transform-origin: 0 0;
+    }
+}
+
 body{
     margin: 0;
     background-color: #FFF8DC;
