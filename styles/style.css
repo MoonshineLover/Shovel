@@ -1,0 +1,371 @@
+/* 
+цвет земли: #A2653E
+цвет листьев: #388F02
+цвет пестков незрелой кукурузы: #FFF8DC
+ */
+
+/* fonts Inter & Neucha (for lables etc) */
+.inter-semi-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: 44;
+    font-weight: 700;
+    font-style: italic;
+}
+.neucha-regular {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #FFF8DC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 121px;
+    padding: 0 20px;
+    background-color: #A2653E;
+}
+
+/* header & navbar */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 98px;
+    height: 98px;
+    margin-right: 10px;
+}
+.site-title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Neucha";
+    color: #FFF8DC;
+}
+.header-nav {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    margin-right: 60px;
+}
+.header-nav a {
+    margin-left: 30px;
+    font-size: 22px;
+    font-family: "Inter";
+    font-weight: 600;
+    color: #FFF8DC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-radius: 15px;
+    padding: 15px;
+}
+.header-nav a:hover{
+    color: #388F02;
+    background-color: #FFF8DC;
+}
+
+/* greetengs */
+div.greetengs{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    min-height: calc(529px + 20vh);
+    max-height: 729px;
+}
+p.greetengs{
+    font-size: 100px;
+    font-family: "Neucha";
+    margin: 0;
+    max-width: 737px;
+    max-height: 288px;
+    line-height: 98px;
+}
+img.greetengs{
+    width: 494px;
+    height: 508px;
+}
+div.greetengs-container{
+    display: flex;
+    align-items: flex-end;
+}
+i.greetengs{
+    color: #388F02;
+    font-style: normal;
+}
+
+/* categories */
+div.categories{
+    align-items: center;
+    background-color: #A2653E;
+    min-height: 1325px;
+}
+p.categories{
+    font-family: "Inter";
+    color: #FFF8DC;
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 45px;
+    height: 49px;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 26px;
+}
+
+/* killer fitches */
+
+div.killer-fitch-label{
+    display: block;
+    text-align: center;
+}
+h4.killer-fitch-label{
+    font-family: "Neucha";
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    /* also i.greetengs need */
+}
+
+/* yandex map */
+.map-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* adds */
+.adds-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #388F02;
+    height: 181px;
+    width: 96%;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+p.adds-card{
+    background-color: #ffffff00;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    font-family: "Inter";
+    font-weight: 600;
+    color:#FFF8DC;
+    font-size: 250%;
+    max-width: 45%;
+}
+
+/* email-fill */
+div.email-fill{
+    display: flex;
+    justify-content: left;
+    margin-right: 44px;
+    width: 40%;
+}
+p.email-fill{
+    margin:0;
+    margin-right: 14px;
+}
+input[type="email"].email-fill {
+    background-color: #FFF8DC;
+    color: #544f38;
+    font-family: "Inter";
+    border-radius: 20px 2px 2px 20px;
+    border: 1px solid #FFF8DC;
+    height: 101px;
+    width: 30vw;
+    font-family: "Inter";
+    font-size: 35px;
+    color:#848175;
+    padding-left: 30px;
+}
+input[type="email"]::placeholder{
+    font-family: "Inter";
+    font-size: 35px;
+    color:#848175;
+}
+div.button{
+    background-color: #FFF8DC;
+    border: 1px solid #FFF8DC;
+    height: 101px;
+    border-radius: 2px 20px 20px 2px;
+    width: 115px;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+}
+div.button:hover{
+    transform: translateX(10px);
+}
+svg.button{
+    margin-top: 23px;
+    margin-left: 28px;
+    margin-right: 25px;
+    margin-bottom: 23px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 249px;
+    background-color: #A2653E;
+}
+div.social-media{
+    display: block;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+p.social-media{
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 30px;
+    color:#FFF8DC;
+}
+div.logos{
+    display: flex;
+    justify-content: space-around;
+}
+div.contacts{
+    display: block;
+}
+p.contacts{
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 30px;
+    color:#FFF8DC;
+}
+i.contacts{
+    font-weight: 400;
+    font-style: normal;
+}
+div.for-the-last-one-logo-finally{
+    margin-right:40px;
+}
+
+/* cards (of categories & killer-fitches)*/
+
+/* one card */
+div.card{
+    background-color: #FFF8DC;
+    border-radius: 50px;
+    min-width: 440px;
+    min-height: 588px;
+    margin: 26px;
+    margin-top: 0;
+    margin-left: 0;
+    display: block;
+    transition: transform 0.25s ease;
+}
+div.card:hover{
+    transform: translateY(-10px);
+}
+div.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+.category-img{
+    width: 430px;
+    height: 375px;
+    border-radius: 45px;
+    margin-top: 5px;
+    margin-left: 5px;
+    object-fit: cover;
+}
+.img-contanier{
+    overflow: hidden;
+}
+.category-label{
+    font-family: "Inter";
+    color: black;
+    font-size: 35px;
+    width: 400px;
+    height: 86px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.category-content{
+    font-family: "Inter";
+    color: #388F02;
+    font-size: 30px;
+    width: 400px;
+    height: 74px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* for each fich */
+div.uno-fitch{
+    background-color: #388F02;
+    border-radius: 50px;
+    width: 440px;
+    height: 682px;
+    margin: 26px;
+    margin-top: 0;
+    margin-left: 0;
+}
+/* also cards-container class has been used */
+img.fich-img{
+    max-width: 224px;
+    max-height: 259px;
+    margin-top: 36px;
+}
+div.centered-img{
+    display: flex;
+    justify-content: center;
+    height: 259px;
+}
+div.text-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
+    height: 194px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+p.fich-label{
+    font-family: "Inter";
+    font-size: 65px;
+    color: #FFF8DC;
+    width: 384px;
+    height: 194px;
+    text-align: center;
+    margin-bottom: 0;
+}
+p.fich-content{
+    font-family: "Inter";
+    font-size: 25px;
+    color: #FFF8DC;
+    width: 374px;
+    height: 90px;
+    text-align: center;
+}
+
+/* updates for second page */
+.nothing-is-here-yet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Neucha";
+    font-size: 90px;
+}
+p.nothing-is-here-yet{
+    max-width: 700px;
+    text-align: center;
+}
