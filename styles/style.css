@@ -48,7 +48,7 @@ header {
     align-items: center;
 }
 .logo {
-    width: 14%;
+    max-width: 98px;
     margin-right: 1%;
 }
 .site-title {
@@ -236,8 +236,9 @@ footer{
 }
 div.social-media{
     display: block;
-    margin-left: 80px;
-    margin-bottom: 40px;
+    margin-left: 5.5%;
+    margin-bottom: 2%;
+    width: 40%;
 }
 p.social-media{
     text-align: center;
@@ -245,10 +246,12 @@ p.social-media{
     font-weight: 600;
     font-size: 30px;
     color:#FFF8DC;
+    width: 90%;
 }
 div.logos{
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 div.contacts{
     display: block;
@@ -264,7 +267,9 @@ i.contacts{
     font-style: normal;
 }
 div.for-the-last-one-logo-finally{
-    margin-right:40px;
+    margin-right:2%;
+    width: 7%;
+    height: 98px;
 }
 
 /* cards (of categories & killer-fitches)*/
