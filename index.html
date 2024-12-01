@@ -144,7 +144,7 @@
     
             <!-- adds -->
             <div class="adds-card">
-                <p class="adds-card">Получать уведомления о специальных предложениях и персональных скидках</p>
+                <p class="adds-card" id="message">Получать уведомления о специальных предложениях и персональных скидках</p>
                 <div class="email-fill">
                     <p class="email-fill">
                         <input type="email" placeholder="Ваш Email" class="email-fill" id="email">
@@ -179,7 +179,14 @@
     </div>
 
     <script>
-        new SmoothScroll('a[href*="#"]');
+        const email_button = document.getElementById("send-email-button");
+        const email_fill = document.getElementById("email-fill");
+        const message = document.getElementById("message");
+
+        email_button.addEventListener("click", function() {
+            message.textContent = "Спасибо! Подписка оформлена";
+        });
+
     </script>
 </body>
 </html>

@@ -50,12 +50,14 @@ header {
 .logo {
     max-width: 98px;
     margin-right: 1%;
+    cursor: pointer;
 }
 .site-title {
     font-size: 35px;
     font-weight: bold;
     font-family: "Neucha";
     color: #FFF8DC;
+    cursor: pointer;
 }
 .header-nav {
     display: flex;

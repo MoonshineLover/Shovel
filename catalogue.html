@@ -21,13 +21,14 @@
         <div class="nothing-is-here-yet">
             <p class="nothing-is-here-yet">Пока что здесь товаров нет :(</p>
         </div>
+        <!-- adds -->
         <div class="adds-card">
-            <p class="adds-card">Хочу узнать, когда появятся товары</p>
+            <p class="adds-card" id="message">Получать уведомления о специальных предложениях и персональных скидках</p>
             <div class="email-fill">
                 <p class="email-fill">
                     <input type="email" placeholder="Ваш Email" class="email-fill" id="email">
                 </p>
-                <div class="button">
+                <div class="button" id="send-email-button">
                     <svg class="button" width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M48 28L0 55.7128L0 0.287188L48 28Z" fill="#388F02"/>
                     </svg>
@@ -35,4 +36,13 @@
             </div>
         </div>
     </main>
+    <script>
+        const email_button = document.getElementById("send-email-button");
+        const email_fill = document.getElementById("email-fill");
+        const message = document.getElementById("message");
+        
+        email_button.addEventListener("click", function() {
+            message.textContent = "Спасибо! Подписка оформлена";
+        });
+    </script>
 </body>
