@@ -1,8 +1,8 @@
 const productList = document.getElementById("product-list");
 const products = [
-    {image: "../images/cards_categories/Vegetables_Cucumbers.jpg", title:"Товар 1", description: "Описание товара 1", price: 53, avialiblenes: true},
-    {image: "../images/cards_categories/Vegetables_Cucumbers.jpg", title:"Товар 2", description: "Описание товара 2", price: 30, avialiblenes: false},
-    {image: "../images/cards_categories/Vegetables_Cucumbers.jpg", title:"Товар 3", description: "Описание товара 3", price: 44, avialiblenes: true }
+    {image: "../images/catalogue/Vegetables_Cucumbers.jpg", title:"Товар 1", description: "Описание товара 1", price: 53, avialiblenes: true},
+    {image: "../images/catalogue/Vegetables_Cucumbers.jpg", title:"Товар 2", description: "Описание товара 2", price: 30, avialiblenes: false},
+    {image: "../images/catalogue/Vegetables_Cucumbers.jpg", title:"Товар 3", description: "Описание товара 3", price: 44, avialiblenes: true }
   ];
 
 function createProductCard(product) {
