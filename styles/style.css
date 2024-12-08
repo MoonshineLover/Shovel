@@ -491,12 +491,13 @@ p.nothing-is-here-yet{
     background-color: #FFF8DC;
     border-radius: 35px;
     height: 80px;
-    width: 313px;
+    width: 493px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .goods-indicator-text{
+    margin: 0;
     font-family: "Inter";
     font-size: 30px;
     width: 227px;
