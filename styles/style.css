@@ -31,6 +31,7 @@
 body{
     margin: 0;
     background-color: #FFF8DC;
+    user-select: none;
 }
 
 header {
@@ -77,13 +78,11 @@ header {
     transition: color 0.3s ease;
     border-radius: 15px;
     padding: 15px;
+    white-space: nowrap;
 }
 .header-nav a:hover{
     color: #388F02;
     background-color: #FFF8DC;
-}
-i.invisible{
-    color:#ffffff00;
 }
 
 /* greetengs */
@@ -438,26 +437,26 @@ p.nothing-is-here-yet{
 /* goods cards */
 .goods-card{
     width: 95.8%;
-    height: 335px;
+    height: 385px;
     background-color: #A2653E;
     border-radius: 50px;
     margin-left: 2.1%;
     margin-bottom: 30px;
     display: flex;
     justify-content: start;
-    align-items: center;
     cursor: default;
 }
 .goods-img-container{
     margin-left: 5px;
     border-radius: 45px;
     width: 41.66%;
-    height: 325px;
+    height: 375px;
+    margin-top: 5px;
 }
 .goods-img{
     width: 100%;
     margin: 0;
-    height: 325px;
+    height: 375px;
 }
 .goods-text-container{
     display: block;
@@ -473,6 +472,7 @@ p.nothing-is-here-yet{
     height: 110px;
     margin: 0;
     margin-top: 39px;
+    align-self: self-start;
 }
 .goods-description-n-indicator{
     display: flex;
@@ -480,12 +480,14 @@ p.nothing-is-here-yet{
     align-items: end;
     height: 162px;
     width: 100%;
+    margin-top: 60px;
 }
 .goods-description{
     font-family: "Inter";
     font-size: 25px;
     font-weight: 400;
     color: #FFF8DC;
+    margin-right: 15px;
 }
 .goods-indicator{
     background-color: #FFF8DC;
@@ -507,4 +509,8 @@ p.nothing-is-here-yet{
 }
 .availible-good{
     color:#388F02
+}
+p.goods-price{
+    max-width: 177px;
+    white-space: nowrap;
 }
