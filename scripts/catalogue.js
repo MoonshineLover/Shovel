@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1440px, initial-scale=0.28">
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="images/logos/logo.png"/>
-    <title>Агрофирма Shovel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neucha&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logo-container" onclick="window.location.href='index.html';" cursor="pointer">
-            <img src="images/logos/logo.png" alt="Логотип" class="logo">
-            <h1 class="site-title" href="index.html">Агрофирма Shovel</h1>
-        </div>
-    </header>
-    <main>
-        <p class="category-name">Овощи</p>
-        <div id="product-list"></div>
-    </main>
-    <script>
-        const productList = document.getElementById("product-list");
+const productList = document.getElementById("product-list");
 const products = [
     {image: "/../images/catalogue/cucmbers_ctlg.jpg", title:"Огурцы от Петровны", description: "Супер крутые огуречики, лечат всё на свете - хирургическое образование, две учёные степени", price: 53, avialiblenes: true},
     {image: "/../images/catalogue/tomatoes_ctlg.jpeg", title:"Сеньоры помидоры, здоровые как боинг", description: "Поступают жалобы, что соседи по огороду путают их с арбузами", price: 30, avialiblenes: false},
     {image: "/../images/catalogue/bolgar_ctlg.jpg", title:"Перцы болгарские, но без акцента", description: "Не важно, какой перец - красный или жёлтый, ведь оба окажутся в салате", price: 44, avialiblenes: true }
-    
   ];
 
 function createProductCard(product) {
@@ -55,6 +30,3 @@ function createProductCard(product) {
   products.forEach(product => {
     productList.innerHTML += createProductCard(product);
   });
-
-    </script>
-</body>
