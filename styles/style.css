@@ -1,33 +1,12 @@
 /* 
 цвет земли: #A2653E
-цвет листьев: #388F02
-цвет пестков незрелой кукурузы: #FFF8DC
+мох: #388F02
+цвет початков кукурузы: #FFF8DC
  */
-
 /* fonts Inter & Neucha (for lables etc) */
-.inter-semi-bold {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: 44;
-    font-weight: 700;
-    font-style: italic;
+html{
+    scroll-behavior: smooth;
 }
-.neucha-regular {
-    font-family: "Neucha", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#page-container {
-    width: 100%;
-}
-
-@media (max-width: 967px) {
-    #page-container {
-        transform: scale(0.33);
-        transform-origin: 0 0;
-    }
-}
-
 body{
     margin: 0;
     background-color: #FFF8DC;
@@ -154,6 +133,7 @@ p.categories{
     align-items: center;
 }
 .open-button-img{
+    margin-top: 10px;
     height: 31px;
     width: 31px;
     border-radius: 30px;

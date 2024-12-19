@@ -12,3 +12,4 @@ const message = document.getElementById("message");
 email_button.addEventListener("click", function() {
     message.textContent = "Спасибо! Подписка оформлена";
 });
+
